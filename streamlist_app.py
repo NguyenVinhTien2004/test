@@ -3,8 +3,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import json
 
-# Đọc dữ liệu từ file CSV
-pd.read_csv("kf_coffee.csv")
+# Đọc dữ liệu từ file CSV và lưu vào biến `data`
+data = pd.read_csv("kf_coffee.csv")
 
 # Chuẩn hóa tên cột
 data.columns = data.columns.str.strip().str.lower()
@@ -57,3 +57,4 @@ ax[1].set_ylabel("Sản phẩm")
 
 plt.tight_layout()
 plt.show()
+
